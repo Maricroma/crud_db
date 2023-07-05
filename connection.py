@@ -7,9 +7,9 @@ class Database:
     def __init__(self):
         self.connection = mysql.connector.connect(
             host = "localhost",
-            user = "root",
-            password = "1234",
-            database = "escuela",
+            user = "", #Usuario de la db
+            password = "", #Contraseña de la db
+            database = "", #Nombre de la db
         )
         self.cursor = self.connection.cursor()
 
